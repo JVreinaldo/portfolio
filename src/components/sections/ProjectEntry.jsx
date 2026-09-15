@@ -1,5 +1,6 @@
 import { STATUS } from '../../data/projects'
 import { skillGroups } from '../../data/skills'
+import { SkillIcon } from '../../lib/icons'
 import styles from './ProjectEntry.module.css'
 
 const images = import.meta.glob('../../assets/projects/*.jpg', {
@@ -9,8 +10,8 @@ const images = import.meta.glob('../../assets/projects/*.jpg', {
 
 const allSkills = skillGroups.flatMap((group) => group.skills)
 
-function skillName(id) {
-  return allSkills.find((skill) => skill.id === id)?.name ?? id
+function findSkill(id) {
+  return allSkills.find((skill) => skill.id === id)
 }
 
 export function ProjectEntry({ project, index }) {
@@ -78,9 +79,15 @@ export function ProjectEntry({ project, index }) {
 
         {project.stack.length > 0 && (
           <ul className={styles.stack}>
-            {project.stack.map((id) => (
-              <li key={id}>{skillName(id)}</li>
-            ))}
+            {project.stack.map((id) => {
+              const skill = findSkill(id)
+              return (
+                <li key={id}>
+                  <SkillIcon id={skill?.icon} className={styles.stackIcon} />
+                  {skill?.name ?? id}
+                </li>
+              )
+            })}
           </ul>
         )}
 

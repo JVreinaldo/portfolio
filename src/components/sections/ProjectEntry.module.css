@@ -155,11 +155,21 @@
 }
 
 .stack li {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45em;
   font-family: var(--font-mono);
   font-size: 0.75rem;
   padding: 0.3em 0.6em;
   border: 1px solid var(--color-line-strong);
   color: var(--color-ink-soft);
+}
+
+.stackIcon {
+  width: 0.9em;
+  height: 0.9em;
+  flex-shrink: 0;
+  color: var(--color-ink-faint);
 }
 
 .links {

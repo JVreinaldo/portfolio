@@ -2,6 +2,7 @@ import { skillGroups } from '../../data/skills'
 import { getProjectById } from '../../data/projects'
 import { SectionHeading } from '../SectionHeading'
 import { useReveal } from '../../hooks/useReveal'
+import { SkillIcon } from '../../lib/icons'
 import styles from './Skills.module.css'
 
 export function Skills() {
@@ -14,7 +15,7 @@ export function Skills() {
           index="01"
           id="habilidades-titulo"
           title="Habilidades"
-          description="Não é uma lista de logos: abra cada item para ver onde ele entrou em prática."
+          description="Cada tecnologia abre pra mostrar onde entrou em prática de verdade."
         />
 
         <div ref={revealRef} className={styles.groups}>
@@ -30,7 +31,12 @@ export function Skills() {
                   return (
                     <li key={skill.id}>
                       <details className={styles.skill}>
-                        <summary>{skill.name}</summary>
+                        <summary>
+                          <span className={styles.skillName}>
+                            <SkillIcon id={skill.icon} className={styles.icon} />
+                            {skill.name}
+                          </span>
+                        </summary>
                         <p className={styles.note}>{skill.note}</p>
                         {relatedProjects.length > 0 && (
                           <p className={styles.usedIn}>

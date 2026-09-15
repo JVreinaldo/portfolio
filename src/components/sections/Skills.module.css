@@ -41,6 +41,24 @@
   display: none;
 }
 
+.skillName {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6em;
+}
+
+.icon {
+  flex-shrink: 0;
+  width: 1.05em;
+  height: 1.05em;
+  color: var(--color-ink-faint);
+}
+
+.skill summary:hover .icon,
+.skill[open] .icon {
+  color: var(--color-accent);
+}
+
 .skill summary::after {
   content: '+';
   font-family: var(--font-mono);
