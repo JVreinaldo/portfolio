@@ -1,5 +1,5 @@
 // EDITAR: estas são as informações que aparecem na seção de identidade e contato.
-// Ajuste livremente — nome e e-mail já estão corretos, o resto é ponto de partida.
+// Ajuste livremente. Nome e e-mail já estão corretos, o resto é ponto de partida.
 export const profile = {
   name: 'João Victor Reinaldo',
   handle: 'JVreinaldo',

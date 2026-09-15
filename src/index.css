@@ -193,7 +193,7 @@ p {
 }
 
 /* ---------------------------------------------------------------
-   Scroll reveal (progressive enhancement — see useReveal hook)
+   Scroll reveal (progressive enhancement, ver useReveal hook)
 ------------------------------------------------------------------ */
 [data-reveal] {
   opacity: 0;

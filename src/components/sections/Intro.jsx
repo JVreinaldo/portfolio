@@ -17,7 +17,7 @@ export function Intro() {
         </h1>
 
         <p className={styles.role}>
-          {profile.role} — {profile.status}
+          {profile.role} · {profile.status}
         </p>
 
         <div ref={revealRef} className={styles.body}>

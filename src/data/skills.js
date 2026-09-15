@@ -1,5 +1,5 @@
 // Habilidades agrupadas por frente. Cada item pode citar os projetos (por id,
-// ver projects.js) onde a tecnologia foi de fato usada — é isso que alimenta
+// ver projects.js) onde a tecnologia foi de fato usada. É isso que alimenta
 // os links cruzados na seção de Habilidades. O campo `icon` é resolvido em
 // src/lib/icons.jsx (mantém esse arquivo livre de import de componente).
 export const skillGroups = [
@@ -11,7 +11,7 @@ export const skillGroups = [
         id: 'html',
         name: 'HTML5',
         icon: 'html',
-        note: 'Base de tudo que eu construo — penso na estrutura antes do visual.',
+        note: 'Base de tudo que eu construo. Penso na estrutura antes do visual.',
         projectIds: ['casa-betel-elevare'],
       },
       {
@@ -32,7 +32,7 @@ export const skillGroups = [
         id: 'js',
         name: 'JavaScript (ES6+)',
         icon: 'js',
-        note: 'Fetch, promises, manipulação de DOM — o dia a dia da interface.',
+        note: 'Fetch, promises, manipulação de DOM: o dia a dia da interface.',
         projectIds: ['casa-betel-elevare'],
       },
       {

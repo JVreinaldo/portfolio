@@ -2,7 +2,7 @@ import { SiHtml5, SiCss, SiJavascript, SiReact, SiVuedotjs, SiGit } from 'react-
 import { LuSmartphone, LuZap, LuSearch, LuCircleCheck } from 'react-icons/lu'
 
 // Ícones ficam monocromáticos (herdam a cor do texto) em vez das cores de
-// marca — mantém a seção coerente com o resto da paleta, sem virar um
+// marca. Mantém a seção coerente com o resto da paleta, sem virar um
 // mosaico colorido de logos.
 const skillIcons = {
   html: SiHtml5,

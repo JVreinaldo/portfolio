@@ -37,7 +37,7 @@ export function Projects() {
           index="02"
           id="projetos-titulo"
           title="Projetos"
-          description="Do que já está no ar ao que ainda é só direção — nesta ordem, de propósito."
+          description="Do que já está no ar ao que ainda é só direção, nesta ordem, de propósito."
         />
 
         <div ref={revealRef}>
