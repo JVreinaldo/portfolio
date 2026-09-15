@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://SEU-DOMINIO.vercel.app/sitemap.xml
+Sitemap: https://jvreinaldo.github.io/portfolio/sitemap.xml

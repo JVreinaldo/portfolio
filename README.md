@@ -20,8 +20,11 @@ ou glassmorphism) em vez do "template de dev" padrão.
 
 ```bash
 npm install
-npm run dev       # http://localhost:5173
+npm run dev       # http://localhost:5173/portfolio/
 ```
+
+(A URL leva `/portfolio/` no caminho porque o `base` do Vite está configurado
+para bater com o GitHub Pages — veja a seção de Deploy.)
 
 ## Build
 
@@ -32,20 +35,22 @@ npm run preview    # serve o build de produção localmente
 
 ## Deploy
 
-Hospedado na **Vercel**, com deploy automático a cada push na branch
-principal:
+Hospedado no **GitHub Pages**, publicado em
+`https://jvreinaldo.github.io/portfolio/`, com deploy automático a cada push
+na branch `main` via GitHub Actions (`.github/workflows/deploy.yml`): o
+workflow builda o projeto e publica o conteúdo de `dist/`.
 
-1. [Importe o repositório](https://vercel.com/new) na Vercel.
-2. Framework preset: **Vite** (detectado automaticamente).
-3. Build command: `npm run build` · Output directory: `dist`.
-4. Nenhuma variável de ambiente é necessária — o site é 100% estático.
+Ativação (feita uma única vez, direto nas configurações do repositório —
+não é algo que dá pra automatizar por fora):
 
-Depois do primeiro deploy, atualize o domínio real em três lugares (hoje
-com o placeholder `SEU-DOMINIO`):
+1. Repositório precisa ser **público** — o GitHub Pages gratuito não
+   funciona em repositório privado.
+2. Em **Settings → Pages**, em "Build and deployment → Source", selecione
+   **GitHub Actions**.
+3. Qualquer push em `main` a partir daí dispara o deploy.
 
-- `index.html` — `<link rel="canonical">` e as tags `og:url`
-- `public/robots.txt` — linha `Sitemap:`
-- `public/sitemap.xml` — `<loc>`
+O `vite.config.js` já está com `base: '/portfolio/'` — se o repositório
+mudar de nome, esse valor precisa acompanhar.
 
 ## Estrutura do projeto
 
