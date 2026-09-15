@@ -1,0 +1,23 @@
+.group {
+  margin-top: var(--space-5);
+}
+
+.group:first-child {
+  margin-top: 0;
+}
+
+.groupTitle {
+  display: flex;
+  align-items: baseline;
+  gap: var(--space-2);
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-ink-faint);
+  padding-bottom: var(--space-2);
+}
+
+.groupTitle span {
+  color: var(--color-ink-faint);
+}
