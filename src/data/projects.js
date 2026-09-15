@@ -17,9 +17,9 @@ export const projects = [
     summary:
       'Landing page one-page para apresentar um empreendimento residencial de alto padrão.',
     problem:
-      'A construtora precisava de uma página própria para apresentar o imóvel com apelo visual alto e um tour completo pelos ambientes, sem depender só de portais imobiliários e redes sociais.',
+      'A construtora queria uma página só deles pra mostrar o imóvel — fotos boas, um tour completo pelos ambientes — sem depender só de portal imobiliário e Instagram.',
     solution:
-      'Landing page one-page em HTML, CSS e JavaScript puros — sem framework —, com galeria filtrável por ambiente, lightbox com navegação por teclado e swipe, tour virtual 360° incorporado e contato direto via WhatsApp e Instagram.',
+      'Fiz uma landing one-page em HTML, CSS e JavaScript puro, sem framework. Galeria com filtro por ambiente, lightbox que funciona com teclado e swipe no celular, tour 360° embutido e contato direto no WhatsApp.',
     stack: ['html', 'css', 'js', 'responsivo', 'seo', 'performance'],
     features: [
       'Header fixo com navegação suave e menu adaptado para mobile',
@@ -41,9 +41,9 @@ export const projects = [
     summary:
       'O site que você está vendo agora — construído em público, com estrutura aberta para crescer.',
     problem:
-      'Eu precisava de um espaço que fosse meu — não um template — para mostrar como eu penso um projeto do início ao fim, e que eu conseguisse continuar alimentando sem reescrever a estrutura a cada atualização.',
+      'Eu queria um espaço meu, não um template pronto, e que desse pra continuar atualizando sem reescrever a página inteira toda vez que eu terminasse um projeto novo.',
     solution:
-      'React com Vite, sem framework de estilo, com o conteúdo (perfil, habilidades, projetos) separado em arquivos de dados. Adicionar um projeto novo ou uma habilidade nova é editar um arquivo, não redesenhar uma seção.',
+      'React com Vite, sem framework de CSS. O conteúdo — perfil, habilidades, projetos — fica em arquivos separados. Pra adicionar algo novo eu só edito um arquivo.',
     stack: ['react', 'js', 'css', 'git', 'performance', 'seo', 'boas-praticas'],
     features: [
       'Seção de habilidades com referência cruzada para os projetos onde cada tecnologia foi usada',

@@ -5,15 +5,15 @@ export const profile = {
   handle: 'JVreinaldo',
   role: 'Desenvolvedor Front-end',
   // EDITAR: uma frase curta sobre o momento atual (júnior, em transição, estudando X, etc.)
-  status: 'Construindo interfaces e aprendendo em público',
+  status: 'Estudando e construindo coisas em público',
   bio: [
-    'Trabalho na ponta que o usuário vê: interfaces, interações e a experiência de usar um site de verdade, não só a tela do Figma.',
-    'Gosto de entender o problema antes de escrever a primeira linha de código — e de deixar isso visível no jeito como cada projeto aqui está descrito: o que ele resolve, não só o que ele usa.',
+    'Curto trabalhar na parte que o usuário realmente vê e usa: montar uma interface que funciona bem, carrega rápido e não trava no clique errado.',
+    'Antes de sair codando eu tento entender o problema direito. Por isso cada projeto aqui vem com uma explicação do que ele resolve, não só uma lista de tecnologias.',
   ],
   focusAreas: [
-    'Interfaces com HTML semântico e CSS bem estruturado',
-    'Aplicações React e Vue com atenção a performance',
-    'SEO técnico e boas práticas como parte do processo, não um extra',
+    'HTML semântico e CSS organizado',
+    'React e Vue no dia a dia, com atenção a performance',
+    'SEO técnico e boas práticas dentro do processo normal de trabalho',
   ],
   contacts: [
     {
